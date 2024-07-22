@@ -5,14 +5,14 @@
 :root{
     --color-text:#070707;
     --color-error:#A50104;
-    --color-success:#4AFCD9;
+    --color-success:#17B890;
     --color-paper:#E5E5E5;
     --color-primary:#5C7AFF;
     --color-primary-light:#859BFF;
     --color-primary-superlight:#ADBCFF;
     --color-primary-dark:#0029E0;
     --color-secondary:#ED254E;
-    --color-white:#FFFFFF;
+    --color-white:#FFFFFF; 
 }
 *{
     transition: 400ms;
