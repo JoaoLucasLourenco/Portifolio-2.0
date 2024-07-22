@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --color-text:#070707;
+    --color-error:#A50104;
+    --color-succes:#399E5A;
+    --color-paper:#E5E5E5;
+    --color-primary:#5C7AFF;
+    --color-secondary:#ED254E;
+    --color-white:#FFFFFF;
+}
+
+html, body{
+    @apply w-screen h-screen
+}
+
