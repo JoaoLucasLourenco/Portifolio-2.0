@@ -5,14 +5,38 @@
 :root{
     --color-text:#070707;
     --color-error:#A50104;
-    --color-succes:#399E5A;
+    --color-success:#4AFCD9;
     --color-paper:#E5E5E5;
     --color-primary:#5C7AFF;
+    --color-primary-light:#859BFF;
+    --color-primary-superlight:#ADBCFF;
+    --color-primary-dark:#0029E0;
     --color-secondary:#ED254E;
     --color-white:#FFFFFF;
 }
-
+*{
+    transition: 400ms;
+}
 html, body{
-    @apply w-screen h-screen
+    @apply w-screen h-screen text-text
+}
+.buttonHeader{
+    @apply hover:scale-105
+    shadow-md
+    px-10 
+    py-2
+    w-3/4
+    rounded
+    flex
+    justify-center
+    gap-3
+}
+
+.liHeader{
+    @apply shadow-md
+    w-10
+    p-[0.5rem] 
+    rounded-full 
+    cursor-pointer
 }
 
