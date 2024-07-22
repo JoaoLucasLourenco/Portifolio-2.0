@@ -26,7 +26,7 @@ export const Header = () => {
                 ">
                     <a target="_blank" 
                     href="https://github.com/JoaoLucasLourenco" 
-                    className="w-full h-full">
+                    className="w-full h-full hover:text-[var(--color-white)]">
                         <Github/>
                     </a>
                 </li>
@@ -38,7 +38,7 @@ export const Header = () => {
                 ">
                     <a target="_blank" 
                     href="https://www.linkedin.com/in/joão-lucas-lourenço-ab87a1259/" 
-                    className="w-full h-full">
+                    className="w-full h-full hover:text-[var(--color-white)]">
                         <Linkedin />
                     </a>
                 </li>
@@ -49,8 +49,9 @@ export const Header = () => {
                 hover:shadow-[var(--color-secondary)]
                 ">
                     <a target="_blank" 
-                    href="https://www.linkedin.com/in/joão-lucas-lourenço-ab87a1259/" 
-                    className="w-full h-full">
+                    href="./curriculoJoaoLucas.pdf"
+                    download
+                    className="w-full h-full hover:text-[var(--color-white)]">
                         <FileText/>
                         
                     </a>
