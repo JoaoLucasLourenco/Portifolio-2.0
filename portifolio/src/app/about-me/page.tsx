@@ -1,17 +1,11 @@
 'use client'
 
-import { useRouter } from "next/navigation";
-
+import BtnBackHome from "@/components/buttonBackHome/buttonBackHome";
 
 
 export default function AboutMe() {
-    const router = useRouter()
     return (
-      
-      <main className="flex justify-center">
-        <button className="buttonHeader" onClick={() => router.push('/')}>voltar para pagina principal</button>
-        about me
-      </main>
+        <BtnBackHome/>
   
     );
-  }
+}
