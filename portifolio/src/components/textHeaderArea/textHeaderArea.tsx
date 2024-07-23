@@ -6,6 +6,7 @@ export const TextHeaderArea = () => {
             <section className="">
 
                 <ul className="flex gap-5 mb-4">
+                    <abbr title="Github">
                     <li className="
                     liHeader
                     hover:bg-purple-600
@@ -17,7 +18,8 @@ export const TextHeaderArea = () => {
                             <Github/>
                         </a>
                     </li>
-
+                    </abbr>
+                    <abbr title="Linkedin">
                     <li className="
                     liHeader
                     hover:bg-[var(--color-primary)]
@@ -29,20 +31,23 @@ export const TextHeaderArea = () => {
                             <Linkedin />
                         </a>
                     </li>
-
+                    </abbr>
+                    <abbr title="Download Currículo">
                     <li className="
                     liHeader
                     hover:bg-[var(--color-secondary)]
                     hover:shadow-[var(--color-secondary)]
                     ">
+                        
                         <a target="_blank" 
                         href="./curriculoJoaoLucas.pdf"
                         download
-                        className="w-full h-full hover:text-[var(--color-white)]">
+                        className="w-full h-full">
                             <FileText/>
-                            
                         </a>
                     </li>
+                    </abbr>
+                    
                 </ul>
                 
                 <span className="text-lg">Olá, eu sou o João!</span>
