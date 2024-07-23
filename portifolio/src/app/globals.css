@@ -47,16 +47,69 @@ html, body{
 }
 
 .buttonBackHome{
-    @apply hover:bg-[var(--color-primary-light)]
+    @apply hover:scale-105
     text-center
     rounded
-    bg-[var(--color-primary)]
-    text-[var(--color-white)]
+    bg-[var(--color-white)]
+    text-[var(--color-primary)]
+    shadow-md
     flex
     justify-center
     items-center
+    py-2
+    px-6
     gap-3
+    absolute
+    top-3
+    left-3
 }
 
+.textAboutMe{
+    @apply text-white
+    bg-[var(--color-primary)]
+    min-w-full
+    h-5/6
+    text-center
+    p-5
+}
+.textAboutMe h1{
+    @apply font-semibold
+    text-2xl
+    mt-16
+}
+.textAboutMe p{
+    @apply text-center
+    text-lg
+    font-light
+    min-w-80
+    w-8/12
+    m-auto
+    p-3
+}
+
+.skills{
+    @apply grid
+    grid-cols-1
+    w-10/12
+    m-auto
+    text-center
+    divide-y
+    divide-[var(--color-primary)]
+    border
+    border-[var(--color-primary)]
+    rounded-lg
+    p-8
+    bg-white
+    relative
+    bottom-10
+}
+
+.skillCard{
+    @apply
+    flex
+    justify-center
+    flex-wrap
+    p-4
+}
 
 
