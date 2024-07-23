@@ -16,6 +16,10 @@
 }
 *{
     transition: 400ms;
+    ::selection{
+        background-color: var(--color-secondary);
+        color: var(--color-white);
+    }
 }
 html, body{
     @apply w-screen h-screen text-text

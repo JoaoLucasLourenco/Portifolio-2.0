@@ -10,6 +10,7 @@ export const ContactMe = () => {
                 setTimeout(() => setEmailCopied(false), 1000);
             })
     }
+    
 
     return(
         <section className="mt-5 contactSection">

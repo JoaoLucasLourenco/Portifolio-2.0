@@ -1,11 +1,8 @@
-
-
-
 export default function Projects() {
-    return (    
+    return (
       
       <main className="flex justify-center">
-        
+        projects
       </main>
   
     );
