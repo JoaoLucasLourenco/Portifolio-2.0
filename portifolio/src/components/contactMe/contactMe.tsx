@@ -1,5 +1,6 @@
-import { CodeXml, Files} from "lucide-react"
+import { CodeXml, Files, User} from "lucide-react"
 import { useState } from "react"
+import { useRouter } from "next/navigation";
 
 export const ContactMe = () => {
     const [emailCopied, setEmailCopied] = useState(false)
@@ -11,7 +12,7 @@ export const ContactMe = () => {
             })
     }
     
-
+    const router = useRouter()
     return(
         <section className="mt-5 contactSection">
                 <div className="flex gap-3 justify-center flex-wrap text-center">
@@ -53,8 +54,21 @@ export const ContactMe = () => {
                     text-[var(--color-primary)]
                     border
                     border-[var(--color-primary)]
-                    ">
+                    "
+                    onClick={()=>router.push('/projects')}
+                    >
                         Ver projetos <CodeXml/>
+                    </button>
+
+                    <button className="
+                    buttonHeaderShadowNone
+                    hover:underline
+                    hover:text-[var(--color-primary-dark)]
+                    text-[var(--color-primary-light)]
+                    "
+                    onClick={()=>router.push('/about-me')}
+                    >
+                        Ver sobre o João <User/>
                     </button>
                 </div>
             </section>

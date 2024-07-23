@@ -24,9 +24,9 @@
 html, body{
     @apply w-screen h-screen text-text
 }
-.buttonHeader{
+
+.buttonHeaderShadowNone{
     @apply hover:scale-105
-    shadow-md
     px-10 
     py-2
     w-3/4
@@ -34,6 +34,11 @@ html, body{
     flex
     justify-center
     gap-3
+}
+
+.buttonHeader{
+    @apply buttonHeaderShadowNone
+    shadow-md
 }
 
 .liHeader{
