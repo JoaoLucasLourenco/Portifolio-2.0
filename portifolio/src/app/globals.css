@@ -4,27 +4,33 @@
 
 :root{
     --color-text:#070707;
-    --color-error:#A50104;
-    --color-success:#17B890;
+    --color-error:#FC440F;
+    --color-success:#04E762;
     --color-paper:#E5E5E5;
     --color-primary:#5C7AFF;
     --color-primary-light:#859BFF;
     --color-primary-superlight:#ADBCFF;
     --color-primary-dark:#0029E0;
-    --color-secondary:#ED254E;
+    --color-secondary:#F1DAC4;
     --color-white:#FFFFFF; 
 }
 *{
     transition: 400ms;
     ::selection{
         background-color: var(--color-secondary);
-        color: var(--color-white);
+        color: var(--color-text);
     }
 }
 html, body{
     @apply w-screen h-screen text-text
 }
-
+.liHeader{
+    @apply shadow-md
+    w-10
+    p-[0.5rem] 
+    rounded-full 
+    cursor-pointer
+}
 .buttonHeaderShadowNone{
     @apply hover:scale-105
     px-10 
@@ -35,17 +41,22 @@ html, body{
     justify-center
     gap-3
 }
-
 .buttonHeader{
     @apply buttonHeaderShadowNone
     shadow-md
 }
 
-.liHeader{
-    @apply shadow-md
-    w-10
-    p-[0.5rem] 
-    rounded-full 
-    cursor-pointer
+.buttonBackHome{
+    @apply hover:bg-[var(--color-primary-light)]
+    text-center
+    rounded
+    bg-[var(--color-primary)]
+    text-[var(--color-white)]
+    flex
+    justify-center
+    items-center
+    gap-3
 }
+
+
 
