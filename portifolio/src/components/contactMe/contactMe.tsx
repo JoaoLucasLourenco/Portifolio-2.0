@@ -55,7 +55,7 @@ export const ContactMe = () => {
                     border
                     border-[var(--color-primary)]
                     "
-                    onClick={()=>router.push('/projects')}
+                    onClick={()=>router.push('/')}
                     >
                         Ver projetos <CodeXml/>
                     </button>
