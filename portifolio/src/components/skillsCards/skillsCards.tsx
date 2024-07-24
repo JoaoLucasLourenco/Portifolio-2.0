@@ -34,7 +34,7 @@ export const SkillCards = () => {
                             +4 anos de atendimento ao público
                         </li>
                         <li>
-                            +4 trabalhando em equipe
+                            +4 anos trabalhando em equipe
                         </li>
                         <li>
                             +60 pessoas diferentes com quem trabalhei
