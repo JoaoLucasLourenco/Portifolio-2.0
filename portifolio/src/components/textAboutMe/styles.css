@@ -22,11 +22,11 @@
     min-w-full
     text-center
     p-10
-    2xl:h-2/5
-    xl:h-2/5
+    2xl:h-2/5   
+    xl:h-3/5
     lg:h-3/5
     md:h-3/5
-    h-5/6
+    h-5/6   
 }
 .textAboutMe h1{
     @apply font-semibold
