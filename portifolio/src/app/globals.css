@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root{
-    --color-text:#070707;
+    --color-text:#00131B;
     --color-error:#FC440F;
     --color-success:#04E762;
     --color-paper:#E5E5E5;
@@ -68,19 +68,25 @@ html, body{
     @apply text-white
     bg-[var(--color-primary)]
     min-w-full
-    h-5/6
     text-center
-    p-5
+    p-10
+    2xl:h-1/5
+    xl:h-2/5
+    lg:h-3/5
+    md:h-3/5
+    h-5/6
 }
 .textAboutMe h1{
     @apply font-semibold
     text-2xl
-    mt-16
+    mt-10
+    2xl:text-4xl
 }
 .textAboutMe p{
     @apply text-center
     text-lg
-    font-light
+    2xl:text-3xl
+    font-medium
     min-w-80
     w-8/12
     m-auto
@@ -89,11 +95,14 @@ html, body{
 
 .skills{
     @apply grid
+    lg:grid-cols-2
     grid-cols-1
+    lg:divide-x
+    lg:divide-y-0
+    divide-y
     w-10/12
     m-auto
     text-center
-    divide-y
     divide-[var(--color-primary)]
     border
     border-[var(--color-primary)]
@@ -102,14 +111,37 @@ html, body{
     bg-white
     relative
     bottom-10
+    shadow-lg
 }
 
 .skillCard{
-    @apply
-    flex
+    @apply grid
     justify-center
-    flex-wrap
+    align-middle
+    p-5
+}
+
+.skillCard h3{
+    @apply m-auto
     p-4
+    text-lg
+    font-bold
+}
+
+.skillCard h6{
+    @apply
+    p-4
+    font-medium
+    text-primary
+}
+
+.iconSkillCard{
+    @apply
+    bg-[var(--color-secondary)]
+    text-text
+    p-3
+    rounded-full
+    m-auto
 }
 
 
