@@ -22,7 +22,7 @@
     min-w-full
     text-center
     p-10
-    2xl:h-1/5
+    2xl:h-2/5
     xl:h-2/5
     lg:h-3/5
     md:h-3/5
@@ -36,8 +36,8 @@
 }
 .textAboutMe p{
     @apply text-center
-    text-lg
-    2xl:text-3xl
+    text-lg     
+    2xl:text-xl
     font-medium
     min-w-80
     w-8/12
