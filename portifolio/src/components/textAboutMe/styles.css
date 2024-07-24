@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --color-text:#00131B;
+    --color-error:#FC440F;
+    --color-success:#04E762;
+    --color-paper:#E5E5E5;
+    --color-primary:#5C7AFF;
+    --color-primary-light:#859BFF;
+    --color-primary-superlight:#ADBCFF;
+    --color-primary-dark:#0029E0;
+    --color-secondary:#F1DAC4;
+    --color-white:#FFFFFF; 
+}
+
+
+.textAboutMe{
+    @apply text-white
+    bg-[var(--color-primary)]
+    min-w-full
+    text-center
+    p-10
+    2xl:h-1/5
+    xl:h-2/5
+    lg:h-3/5
+    md:h-3/5
+    h-5/6
+}
+.textAboutMe h1{
+    @apply font-semibold
+    text-2xl
+    mt-10
+    2xl:text-4xl
+}
+.textAboutMe p{
+    @apply text-center
+    text-lg
+    2xl:text-3xl
+    font-medium
+    min-w-80
+    w-8/12
+    m-auto
+    p-3
+}

@@ -1,3 +1,5 @@
+import './styles.css'
+
 export const TextAboutMe = () => {
     return(
             <section className="textAboutMe">

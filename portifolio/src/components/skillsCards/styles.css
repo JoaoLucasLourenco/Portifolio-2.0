@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --color-text:#00131B;
+    --color-error:#FC440F;
+    --color-success:#04E762;
+    --color-paper:#E5E5E5;
+    --color-primary:#5C7AFF;
+    --color-primary-light:#859BFF;
+    --color-primary-superlight:#ADBCFF;
+    --color-primary-dark:#0029E0;
+    --color-secondary:#F1DAC4;
+    --color-white:#FFFFFF; 
+}
+
+
+.skills{
+    @apply grid
+    lg:grid-cols-2
+    grid-cols-1
+    lg:divide-x
+    lg:divide-y-0
+    divide-y
+    w-10/12
+    m-auto
+    text-center
+    divide-[var(--color-primary)]
+    border
+    border-[var(--color-primary)]
+    rounded-lg
+    p-8
+    bg-white
+    relative
+    bottom-10
+    shadow-lg
+}
+
+.skillCard{
+    @apply grid
+    justify-center
+    align-middle
+    p-5
+}
+
+.skillCard h3{
+    @apply m-auto
+    p-4
+    text-lg
+    font-bold
+}
+
+.skillCard h6{
+    @apply
+    p-4
+    font-medium
+    text-primary
+}
+
+.iconSkillCard{
+    @apply
+    bg-[var(--color-secondary)]
+    text-text
+    p-3
+    rounded-full
+    m-auto
+}
+
+

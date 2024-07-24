@@ -1,5 +1,5 @@
 import { Speech, SquareCode } from "lucide-react"
-
+import './styles.css'
 export const SkillCards = () => {
     return(
             <div className="skills">
