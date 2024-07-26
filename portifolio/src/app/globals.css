@@ -22,7 +22,7 @@
     }
 }
 html, body{
-    @apply w-screen h-screen text-text
+    @apply w-full h-screen text-text
 }
 .liHeader{
     @apply shadow-md
