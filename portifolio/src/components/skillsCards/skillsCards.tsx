@@ -81,7 +81,7 @@ export const SkillCards = () => {
                             VS Code
                         </li>
                         <li>
-                            Versel
+                            Vercel
                         </li>
                         <li>
                             Visual Studio
