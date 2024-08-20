@@ -15,7 +15,7 @@ export const ContactMe = () => {
     const router = useRouter()
     return(
         <section className="mt-5 contactSection">
-                <div className="flex gap-3 justify-center flex-wrap text-center">
+                <div className="flex gap-3 justify-center flex-wrap text-center text-wrap">
                     <h3 className="text-xl w-full">
                         Me mande um email!
                     </h3>
@@ -55,7 +55,7 @@ export const ContactMe = () => {
                     border
                     border-[var(--color-primary)]
                     "
-                    onClick={()=>router.push('/')}
+                    onClick={()=>router.push('/projects')}
                     >
                         Ver projetos <CodeXml/>
                     </button>
