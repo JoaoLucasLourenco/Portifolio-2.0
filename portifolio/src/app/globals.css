@@ -22,7 +22,7 @@
     }
 }
 html, body{
-    @apply w-screen h-screen text-text
+    @apply w-full h-screen text-text
 }
 .liHeader{
     @apply shadow-md
@@ -59,7 +59,7 @@ html, body{
     py-2
     px-6
     gap-3
-    absolute
+    fixed
     top-3
     left-3
 }
