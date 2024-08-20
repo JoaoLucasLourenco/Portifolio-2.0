@@ -1,5 +1,5 @@
 
-import './styles.css';
+import './stylesProjects.css';
 import { ChevronRight, Github, Globe } from 'lucide-react';
 export const ProjectCards = () =>{
     const imagem1 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/DT-PORT.png?raw=true"
@@ -42,7 +42,7 @@ export const ProjectCards = () =>{
                 <main
                 >
                 <ul>
-                    <li>
+                    <li className="card-li">
                         <h3>Byte & bite</h3>
                         <img src={imagem3} alt="" />
                         <p>Web app completo com Frontend e Backend, para servir como prontuário
@@ -58,7 +58,7 @@ export const ProjectCards = () =>{
                         >Acessar código
                         </button>
                     </li>
-                    <li>
+                    <li className="card-li">
                         <h3>Calculadora Postaqui</h3>
                         <img src={imagem2} alt="" />
                         <p>Calculadora online de fretes, feito como teste para estágio na empresa
@@ -72,7 +72,7 @@ export const ProjectCards = () =>{
                         >Acessar código
                         </button>
                     </li>
-                    <li>
+                    <li className="card-li">
                         <h3>Dream trip</h3>
                         <img src={imagem1} alt="" />
 

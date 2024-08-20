@@ -6,17 +6,6 @@ ul{
     grid-cols-1
     gap-5
 }
-li{
-    @apply justify-center
-    items-center
-    mb-6
-    rounded-t-2xl
-    m-auto
-    w-11/12
-    border
-    h-full
-    bg-white
-}
 img{
     @apply rounded-t-2xl
 }
@@ -29,5 +18,16 @@ h3, p{
 }
 .buttonHeader, .buttonHeaderShadowNone{
     @apply m-auto
+}
+.card-li{
+    @apply h-full
+    justify-center
+    items-center
+    mb-6
+    rounded-t-2xl
+    m-auto
+    w-11/12
+    border
+    bg-white
 }
 
