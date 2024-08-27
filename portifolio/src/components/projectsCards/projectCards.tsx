@@ -1,6 +1,8 @@
 
+import Image from 'next/image';
 import './stylesProjects.css';
 import { ChevronRight, Github, Globe } from 'lucide-react';
+import { projetos } from '@/variables/projects';
 export const ProjectCards = () =>{
     const imagem1 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/summoned.png?raw=true"
     const imagem2 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/em-dev.png?raw=true"
@@ -9,7 +11,8 @@ export const ProjectCards = () =>{
     const handleClick = (String: string) => {
         window.open(String,'_blank','noopener,noreferrer')
       }
-
+    
+    
     return(
         <main>
             <header
@@ -39,61 +42,40 @@ export const ProjectCards = () =>{
                     '
                     > Me mande um email</a>
                 </h2>
-                <main
-                >
-                <ul>
-                    <li className="card-li">
-                        <h3>Byte & bite</h3>
-                        <img src={imagem3} alt="" />
-                        <p>Web app completo com Frontend e Backend, para servir como prontuário
-                            eletrônico para os alunos da clínica
-                            de odontologia da UNIFENAS, feito com React.js e Styled Components, .NET
-                            e MySQL
-                        </p>
-                        <button className='buttonHeader
-                        bg-primary
-                        text-white  
-                        '
-                        onClick={()=>handleClick("https://github.com/JoaoLucasLourenco/OdontoAtex")}
-                        >Acessar código
-                        </button>
-                    </li>
-                    <li className="card-li">
-                        <h3>Calculadora Postaqui</h3>
-                        <img src={imagem2} alt="" />
-                        <p>Calculadora online de fretes, feito como teste para estágio na empresa
-                            Postaqui utilizando React.js com Styled Components.
-                        </p>
-                        <button className='buttonHeader
-                        bg-primary
-                        text-white  
-                        '
-                        onClick={()=>handleClick("https://github.com/JoaoLucasLourenco/Teste_Postaqui")}
-                        >Acessar código
-                        </button>
-                    </li>
-                    <li className="card-li">
-                        <h3>Summoned</h3>
-                        <img src={imagem1} alt="" />
+                <main>
+                    <ul>
+                        {projetos.map((proj) => (
+                            <li className="card-li" key={proj.id}>
+                                <h3>{proj.titulo}</h3>
+                                <img src={proj.imgSrc} alt="" />
 
-                        <p>
-                            Projeto focado no desenvolvimento de habilidades frontend utilizando Next.js, voltado para jogadores de RPG. O objetivo é criar uma aplicação web moderna e interativa que ofereça uma experiência envolvente para os usuários.
-                        </p>
-                        <button className='buttonHeader 
-                        bg-primary 
-                        text-white
-                        hover:bg-[var(--color-primary-light)]
-                        '
+                                <p>
+                                    {proj.textoDescritivo}
+                                </p>
+                                {
+                                    proj.urlSite===''?
+                                    <></>:
+                                    <button className='buttonHeader 
+                                    bg-primary 
+                                    text-white
+                                    hover:bg-[var(--color-primary-light)]
+                                    '
+                                    
+                                    onClick={()=>handleClick(proj.urlSite)}
+                                    >Visitar site
+                                    </button>
+                                }
+                                <button className={proj.urlSite===''?'text-white buttonHeader bg-primary hover:bg-[var(--color-primary-light)]'
+                                :'buttonHeaderShadowNone'}
+
+                                    onClick={()=>handleClick(proj.urlCodigo)}
+                                    >Acessar código
+                                </button>
+                                
+                            </li>
+                        ))}
                         
-                        onClick={()=>handleClick("https://github.com/JoaoLucasLourenco/summoned     ")}
-                        >Acessar código
-                        
-                        </button>
-                        
-                    </li>
-                    
-                    
-                </ul>
+                    </ul>
                 </main>
 
 
