@@ -2,7 +2,7 @@
 import './stylesProjects.css';
 import { ChevronRight, Github, Globe } from 'lucide-react';
 export const ProjectCards = () =>{
-    const imagem1 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/DT-PORT.png?raw=true"
+    const imagem1 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/summoned.png?raw=true"
     const imagem2 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/em-dev.png?raw=true"
     const imagem3 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/byte-bite.png?raw=true"
 
@@ -73,11 +73,11 @@ export const ProjectCards = () =>{
                         </button>
                     </li>
                     <li className="card-li">
-                        <h3>Dream trip</h3>
+                        <h3>Summoned</h3>
                         <img src={imagem1} alt="" />
 
                         <p>
-                            Site de viagens fictício feito utilizando HTML, CSS e JavaScript
+                            Projeto focado no desenvolvimento de habilidades frontend utilizando Next.js, voltado para jogadores de RPG. O objetivo é criar uma aplicação web moderna e interativa que ofereça uma experiência envolvente para os usuários.
                         </p>
                         <button className='buttonHeader 
                         bg-primary 
@@ -85,16 +85,11 @@ export const ProjectCards = () =>{
                         hover:bg-[var(--color-primary-light)]
                         '
                         
-                        onClick={()=>handleClick("https://joaolucaslourenco.github.io/Dream-Trip/index.html")}
-                        >Visitar site 
-                        
-                        </button>
-                        <button className='buttonHeaderShadowNone
-                        
-                        '
-                        onClick={()=>handleClick("https://github.com/JoaoLucasLourenco/Dream-Trip")}
+                        onClick={()=>handleClick("https://github.com/JoaoLucasLourenco/summoned     ")}
                         >Acessar código
+                        
                         </button>
+                        
                     </li>
                     
                     
