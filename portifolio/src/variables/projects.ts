@@ -25,6 +25,6 @@ export const projetos = [
         imgSrc: 'https://github.com/JoaoLucasLourenco/Portifolio/blob/main/summoned.png?raw=true',
         textoDescritivo:'Projeto focado no desenvolvimento de habilidades frontend utilizando Next.js, voltado para jogadores de RPG. O objetivo é criar uma aplicação web moderna e interativa que ofereça uma experiência envolvente para os usuários.',
         urlCodigo: 'https://github.com/JoaoLucasLourenco/OdontoAtex',
-        urlSite:''
+        urlSite:'https://summoned.vercel.app'
     }
 ]
