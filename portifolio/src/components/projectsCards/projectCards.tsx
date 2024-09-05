@@ -1,17 +1,17 @@
-
-import Image from 'next/image';
 import './stylesProjects.css';
-import { ChevronRight, Github, Globe } from 'lucide-react';
+import { ChevronRight, Github, Globe, Search } from 'lucide-react';
 import { projetos } from '@/variables/projects';
+import { useState } from 'react';
+
+
 export const ProjectCards = () =>{
     const imagem1 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/summoned.png?raw=true"
     const imagem2 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/em-dev.png?raw=true"
     const imagem3 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/byte-bite.png?raw=true"
-
+    const [search,setSearch] = useState('');
     const handleClick = (String: string) => {
         window.open(String,'_blank','noopener,noreferrer')
-      }
-    
+    }
     
     return(
         <main>
@@ -43,8 +43,25 @@ export const ProjectCards = () =>{
                     > Me mande um email</a>
                 </h2>
                 <main>
+                <input 
+                className='
+                sm:w-4/6
+                w-11/12
+                rounded-full
+                p-2
+                mb-5
+                text-center
+                border
+                '
+                onChange={(e)=>setSearch(e.target.value)}
+                value={search}
+                placeholder={'Digite o nome de um projeto...'}/>
                     <ul>
-                        {projetos.map((proj) => (
+                        {projetos.filter((projeto)=>{
+                            return search.toLocaleLowerCase() === '' ? projeto : projeto.titulo
+                            .toLocaleLowerCase().includes(search)
+                        }).map((proj) => (
+                            
                             <li className="card-li" key={proj.id}>
                                 <h3>{proj.titulo}</h3>
                                 <img src={proj.imgSrc} alt="" />
