@@ -61,7 +61,6 @@ export const ProjectCards = () =>{
                             return search.toLocaleLowerCase() === '' ? projeto : projeto.titulo
                             .toLocaleLowerCase().includes(search)
                         }).map((proj) => (
-                            
                             <li className="card-li" key={proj.id}>
                                 <h3>{proj.titulo}</h3>
                                 <img src={proj.imgSrc} alt="" />
