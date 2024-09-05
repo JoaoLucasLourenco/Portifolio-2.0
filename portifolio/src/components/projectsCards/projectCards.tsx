@@ -4,9 +4,6 @@ import { projetos } from '@/variables/projects';
 import { useState } from 'react';
 
 export const ProjectCards = () =>{
-    const imagem1 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/summoned.png?raw=true"
-    const imagem2 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/em-dev.png?raw=true"
-    const imagem3 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/byte-bite.png?raw=true"
     const [search,setSearch] = useState('');
     const handleClick = (String: string) => {
         window.open(String,'_blank','noopener,noreferrer')
@@ -44,7 +41,7 @@ export const ProjectCards = () =>{
                 <main>
                 <input 
                 className='
-                sm:w-4/6
+                lg:w-1/3
                 w-11/12
                 rounded-full
                 p-2
@@ -57,8 +54,8 @@ export const ProjectCards = () =>{
                 placeholder={'Digite o nome de um projeto...'}/>
                     <ul>
                         {projetos.filter((projeto)=>{
-                            return search.toLocaleLowerCase() === '' ? projeto : projeto.titulo
-                            .toLocaleLowerCase().includes(search)
+                            return search.toLowerCase() === '' ? projeto : projeto.titulo
+                            .toLowerCase().includes(search.toLowerCase())
                         }).map((proj) => (
                             
                             <li className="card-li" key={proj.id}>
