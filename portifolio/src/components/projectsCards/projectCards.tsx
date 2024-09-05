@@ -3,7 +3,6 @@ import { ChevronRight, Github, Globe, Search } from 'lucide-react';
 import { projetos } from '@/variables/projects';
 import { useState } from 'react';
 
-
 export const ProjectCards = () =>{
     const imagem1 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/summoned.png?raw=true"
     const imagem2 = "https://github.com/JoaoLucasLourenco/Portifolio/blob/main/em-dev.png?raw=true"
@@ -61,6 +60,7 @@ export const ProjectCards = () =>{
                             return search.toLocaleLowerCase() === '' ? projeto : projeto.titulo
                             .toLocaleLowerCase().includes(search)
                         }).map((proj) => (
+                            
                             <li className="card-li" key={proj.id}>
                                 <h3>{proj.titulo}</h3>
                                 <img src={proj.imgSrc} alt="" />
