@@ -16,7 +16,7 @@ export const projetos = [
         imgSrc: 'https://github.com/JoaoLucasLourenco/Portifolio/blob/main/em-dev.png?raw=true',
         textoDescritivo:'Calculadora online de fretes, feito como teste para estágio na empresa '+
                         'Postaqui utilizando React.js com Styled Components.',
-        urlCodigo: 'https://github.com/JoaoLucasLourenco/OdontoAtex',
+        urlCodigo: 'https://github.com/JoaoLucasLourenco/Teste_Postaqui',
         urlSite:''
     },
     {
@@ -24,7 +24,7 @@ export const projetos = [
         titulo:'Summoned',
         imgSrc: 'https://github.com/JoaoLucasLourenco/Portifolio/blob/main/summoned.png?raw=true',
         textoDescritivo:'Projeto focado no desenvolvimento de habilidades frontend utilizando Next.js, voltado para jogadores de RPG. O objetivo é criar uma aplicação web moderna e interativa que ofereça uma experiência envolvente para os usuários.',
-        urlCodigo: 'https://github.com/JoaoLucasLourenco/OdontoAtex',
+        urlCodigo: 'https://github.com/JoaoLucasLourenco/summoned',
         urlSite:'https://summoned.vercel.app'
     }
 ]
