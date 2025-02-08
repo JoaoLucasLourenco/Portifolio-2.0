@@ -60,16 +60,7 @@ export const ContactMe = () => {
                         Ver projetos <CodeXml/>
                     </button>
 
-                    <button className="
-                    buttonHeaderShadowNone
-                    hover:underline
-                    hover:text-[var(--color-primary-dark)]
-                    text-[var(--color-primary-light)]
-                    "
-                    onClick={()=>router.push('/about-me')}
-                    >
-                        Ver sobre o João <User/>
-                    </button>
+                    
                 </div>
             </section>
     )
