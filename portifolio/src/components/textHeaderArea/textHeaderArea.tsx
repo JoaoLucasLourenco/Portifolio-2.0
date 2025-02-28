@@ -52,7 +52,7 @@ export const TextHeaderArea = () => {
                 
                 <span className="text-lg">Olá, eu sou o João!</span>
                 <h1 className="text-2xl font-medium">
-                    Desenvolvedor Frontend em busca de experiência profissional
+                    Desenvolvedor Frontend
                 </h1>
             </section>
     )
